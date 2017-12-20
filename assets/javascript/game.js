@@ -212,8 +212,10 @@ function movingEnemiesToTheirContainer(){
       $('#message-container').html('You have attacked ' + character.name + ' with ' + character.attack + ' points.');
       console.log(character.health);
 
+
+
       character.health = character.health - defenders.attack;
-      $($(`#${character.name} p.health`)[1]).html(character.health);
+      $($(`.${character.name} p.health`)[1]).html(character.health);
       console.log()
 
 
